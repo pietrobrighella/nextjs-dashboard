@@ -24,16 +24,16 @@ export default function Pagination({ totalPages }: { totalPages: number }) {
   return (
     <>
       {/* NOTE: comment in this code when you get to this point in the course */}
-
-      {/* <div className="inline-flex">
+      <div className="inline-flex">
         <PaginationArrow
           direction="left"
           href={createPageURL(currentPage - 1)}
           isDisabled={currentPage <= 1}
         />
+              <p>paginazione</p>
 
-        <div className="flex -space-x-px">
-          {allPages.map((page, index) => {
+        {/*<div className="flex -space-x-px">
+          {Pages.map((page, index) => {
             let position: 'first' | 'last' | 'single' | 'middle' | undefined;
 
             if (index === 0) position = 'first';
@@ -51,14 +51,14 @@ export default function Pagination({ totalPages }: { totalPages: number }) {
               />
             );
           })}
-        </div>
+        </div>*/}
 
         <PaginationArrow
           direction="right"
           href={createPageURL(currentPage + 1)}
           isDisabled={currentPage >= totalPages}
         />
-      </div> */}
+        </div>
     </>
   );
 }
